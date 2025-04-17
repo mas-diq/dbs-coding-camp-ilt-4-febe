@@ -16,6 +16,7 @@ document.getElementById('fetchXHR').addEventListener('click', function () {
 
     xhr.onload = function () {
         if (xhr.status === 200) {
+            console.log('Response:', this.responseText);
             const responseJson = JSON.parse(this.responseText);
             resultElement.textContent = formatJSON(responseJson);
         } else {
@@ -43,6 +44,7 @@ document.getElementById('fetchAPI').addEventListener('click', function () {
             return response.json();
         })
         .then(data => {
+            console.log('Response:', data);
             resultElement.textContent = formatJSON(data);
         })
         .catch(error => {

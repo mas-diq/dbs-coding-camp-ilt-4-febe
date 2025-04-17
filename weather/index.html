@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Weather Dashboard</h1>
+
+        <div class="search-container">
+            <input type="text" id="cityInput" placeholder="Enter city name...">
+            <button id="searchBtn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="weather-cards">
+            <div class="card current-weather">
+                <h2>Current Weather</h2>
+                <div id="currentWeather" class="weather-content">
+                    <p>Search for a city to see weather data</p>
+                </div>
+            </div>
+
+            <div class="card api-response">
+                <h2>API Response</h2>
+                <div class="response-container">
+                    <pre id="apiResult">Results will be displayed here...</pre>
+                </div>
+            </div>
+        </div>
+
+        <h2>5-Day Forecast</h2>
+        <div id="forecast" class="forecast-container">
+            <!-- Forecast cards will be added here dynamically -->
+        </div>
+    </div>
+
+    <!-- Load the config file first with the API key -->
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
