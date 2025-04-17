@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh API Request - Restoran</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Contoh Pengambilan Data API Restoran</h1>
+
+        <div class="api-methods">
+            <div class="card">
+                <h2>XMLHttpRequest</h2>
+                <button id="fetchXHR">Ambil Data dengan XMLHttpRequest</button>
+                <div class="response-container">
+                    <pre id="resultXHR">Hasil akan ditampilkan di sini...</pre>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Fetch API</h2>
+                <button id="fetchAPI">Ambil Data dengan Fetch API</button>
+                <div class="response-container">
+                    <pre id="resultFetch">Hasil akan ditampilkan di sini...</pre>
+                </div>
+            </div>
+        </div>
+
+        <h2>Tampilan Daftar Restoran</h2>
+        <button id="showRestaurants">Tampilkan Daftar Restoran</button>
+        <div id="restaurantList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
